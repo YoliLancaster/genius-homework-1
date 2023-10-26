@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS. Lesson 2</title>
+  </head>
+  <body>
+    <h1>JS. Lesson 2</h1>
+    <script>
+      //1
+      // Якщо змінна більше нуля - виведіть true, менше - false
+      //Перевірте це на варіантах 1, 0, -3.
+
+      //Рішення-1
+      // let x = 1;
+      // let a = 0;
+      // let y = -3;
+
+      // if (x > 0) {
+      //   console.log(true);
+      //   if (a > 0) {
+      //     console.log(true);
+      //     if (y > 0) {
+      //       console.log(true);
+      //     }
+      //   }
+      // }
+      // if (x < 0 || y < 0 || a < 0) {
+      //   console.log(false);
+      // }
+
+      //2
+      //Якщо змінна ="test" - виведіть true,
+      //Перевірте це на варіантах 'test',"qwerty", true
+
+      //Рішення-2
+
+      // let v = "test";
+      // let w = "qwerty";
+      // let z = true;
+
+      // if (v === "test" || w === "test" || z === "test") {
+      //   console.log(true);
+      // }
+
+      //3
+      // Якщо змінна більше 10 - відніміть 5,
+      //менше - додайте 5, результат виведіть в консоль
+      //Перевірте це на варіантах 1, 10, 13.
+
+      //Рішення-3
+      // let q = 1;
+      // let r = 10;
+      // let s = 13;
+
+      // if (q > 10) {
+      //   console.log(q - 5);
+      // }
+      // if (q < 10) {
+      //   console.log(q + 5);
+      // }
+
+      // if (r > 10) {
+      //   console.log(r - 5);
+      // }
+      // if (r < 10) {
+      //   console.log(r + 5);
+      // }
+
+      // if (s > 10) {
+      //   console.log(s - 5);
+      // }
+      // if (s < 10) {
+      //   console.log(s + 5);
+      // }
+
+      //4
+      //Зробіть сервіс який отримує число від 1 до 12
+      // виведіть місяць який дорівнює числу
+
+      //Рішення-4
+      // let month = prompt("Введіть число від 1 до 12:");
+
+      // switch (month) {
+      //   case "1":
+      //     console.log("Січень");
+      //     break;
+      //   case "2":
+      //     console.log("Лютий");
+      //     break;
+      //   case "3":
+      //     console.log("Березень");
+      //     break;
+      //   case "4":
+      //     console.log("Квітень");
+      //     break;
+      //   case "5":
+      //     console.log("Травень");
+      //     break;
+      //   case "6":
+      //     console.log("Червень");
+      //     break;
+      //   case "7":
+      //     console.log("Липень");
+      //     break;
+      //   case "8":
+      //     console.log("Серпень");
+      //     break;
+      //   case "9":
+      //     console.log("Вересень");
+      //     break;
+      //   case "10":
+      //     console.log("Жовтень");
+      //     break;
+      //   case "11":
+      //     console.log("Листопад");
+      //     break;
+      //   case "12":
+      //     console.log("Грудень");
+      //     break;
+      //   default:
+      //     console.log("Число повинно бути від 1 до 12");
+      // }
+
+      //5
+      //Зробіть сервіс який отримує тризначне число
+      //Поверніть користувачу сумму цих чисел
+
+      //Рішення-5
+
+      //   const userInput = prompt("Введіть тризначне число:");
+
+      //   if (/^\d{3}$/.test(userInput)) {
+      //     const number = parseInt(userInput);
+      //     const hundreds = Math.floor(number / 100);
+      //     const tens = Math.floor((number % 100) / 10);
+      //     const ones = number % 10;
+
+      //     const sum = hundreds + tens + ones;
+      //     alert(`Сума цифр введеного числа: ${sum}`);
+      //   } else {
+      //     prompt("Будь ласка, введіть тризначне число.");
+      //   }
+    </script>
+  </body>
+</html>
