@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS. Lesson 3</title>
+  </head>
+  <body>
+    <h1>JS. Lesson 3</h1>
+    <script>
+      // -- 1 --
+      // У вас є масив об’єктів fruts, і в кожному з них є name
+      // Напишіть код, який перетворює їх в масив імен.
+      // const fruts = [
+      //   { id: 0, name: "Apple" },
+      //   { id: 1, name: "Tomat" },
+      //   { id: 2, name: "Cherry" },
+      //   { id: 3, name: "Orange" },
+      // ];
+
+      //Рішення-1
+
+      //let fruitsNames = fruts.map((item) => item.name);
+      // console.log(fruitsNames);
+
+      // -- 2 --
+      //Виведіть парні числа від 2 до 10, використовуючи цикл for.
+
+      //Рішення-2
+      // let i;
+      // for (i = 2; i <= 10; i += 2) {
+      //   console.log(i);
+      // }
+
+      // -- 3 --
+      //Замініть цикл "for" на "while"
+      // for (let i = 0; i < 5; i++) {
+      // console.log( `цифра ${i}!` );
+      // }
+
+      //Рішення-3
+      // let i = 0;
+      // while (i < 5) {
+      //   console.log(`цифра ${i}!`);
+      //   i++;
+      // }
+
+      // -- 4 --
+      //Напишіть цикл, який пропонує prompt ввести число більше за 100.
+      //Якщо відвідувач введе менше число – попросити ввести ще раз, і так далі.
+      //Цикл повинен запитувати число доти, доки відвідувач не введе число,
+      // більше за 100, або не скасує ввід/введе порожній рядок.
+
+      //Рішення-4
+      // let num = prompt("Введіть число більше за 100:");
+      // while (+num < 100) {
+      //   alert("Це число менше, ніж 100");
+      //   num = prompt("Введіть число більше за 100:");
+      // }
+
+      // -- 5 --
+      // Вирахуйте середній вік
+      // const girls = [
+      //   { age: 23, name: "Оля" },
+      //   { age: 29, name: "Аня" },
+      //   { age: 10, name: "Юля" },
+      //   { age: 20, name: "Катя" },
+      // ];
+
+      // //Рішення-5
+      // let age = girls.map((item) => item.age);
+      // let average = age.reduce((sum, current) => sum + current) / age.length;
+      // console.log(`Середній вік дівчат - ${average} років`);
+    </script>
+  </body>
+</html>
