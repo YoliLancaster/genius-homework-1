@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS. Lesson 6</title>
+  </head>
+  <body>
+    <h1>JS. Lesson 6</h1>
+    <script>
+      //   Створити телефонну книгу
+      //   створити початковий клас Abonent, де зберігатимуться ім*я і номер
+      //   створити set який прийматиме телефон і номер
+      //   створити get який виводитиме данні про абонента
+      //   створити три різних юзери
+      //   вивести данні
+
+      //Рішення-1
+      class Abonent {
+        constructor(name, phoneNumber) {
+          this.name = name;
+          this.phoneNumber = phoneNumber;
+        }
+
+        setPhoneNumber(phoneNumber) {
+          this.phoneNumber = phoneNumber;
+        }
+
+        getAbonentInfo() {
+          return `Ім'я: ${this.name}, Телефон: ${this.phoneNumber}`;
+        }
+      }
+
+      const abonent1 = new Abonent("Іван", "123-456-789");
+      const abonent2 = new Abonent("Марія", "987-654-321");
+      const abonent3 = new Abonent("Петро", "555-555-555");
+
+      console.log(abonent1.getAbonentInfo());
+      console.log(abonent2.getAbonentInfo());
+      console.log(abonent3.getAbonentInfo());
+    </script>
+  </body>
+</html>
