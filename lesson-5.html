@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS. Lesson 5</title>
+  </head>
+  <body>
+    <h1>JS. Lesson 5</h1>
+
+    <button onclick="displayDefinition('html')">HTML</button>
+    <button onclick="displayDefinition('css')">CSS</button>
+
+    <script>
+      //--1--
+      // 1) написати об*єкт студента який буде виводити ім*я, спеціальнісь, середній
+      // бал і кількість пропущених занять
+      // 2) написати метод який буде виводити цю інформацію
+      // 3) написати три варіанти студентів
+      // 4) прикріпити знначення за допомогою call apply bind
+
+      //Рішення-1
+
+      // const student = {
+      //   displayInfo: function () {
+      //     return `Мене звати ${this.name}. Моя спеціальність ${this.specialty}. Маю середній бал ${this.avgScore}. Пропущених занять: ${this.absentLessons}.`;
+      //   },
+      // };
+
+      // let student1 = {
+      //   name: "Sara",
+      //   specialty: "painter",
+      //   avgScore: 80,
+      //   absentLessons: 20,
+      // };
+
+      // console.log(student.displayInfo.call(student1));
+
+      // let student2 = {
+      //   name: "Harry",
+      //   specialty: "history",
+      //   avgScore: 40,
+      //   absentLessons: 80,
+      // };
+
+      // console.log(student.displayInfo.apply(student2));
+
+      // let student3 = {
+      //   name: "Leo",
+      //   specialty: "engeneer",
+      //   avgScore: 100,
+      //   absentLessons: 0,
+      // };
+
+      // console.log(student.displayInfo.bind(student3)());
+
+      // --2--
+      // Написати дві кнопки і закріпити на них функції
+      // при натисканні на кнопку html - має видати коротке визначення що це таке
+      // при натисканні на кнопку css - має видати коротке визначення що це таке
+
+      //Рішення-2
+
+      // const definitions = {
+      //   html: `HTML (HyperText Markup Language) - мова розмітки, використовується для створення та структуризації вмісту веб-сторінок.`,
+      //   css: `CSS (Cascading Style Sheets) - мова стилів, використовується для задання вигляду та форматування веб-сторінок, написаних на HTML.`,
+      // };
+
+      // function displayDefinition(lang) {
+      //   console.log(definitions[lang]);
+      // }
+
+      // --3--
+      // Написати функцію магазин, яка отримує назву товару, ціну за кг і кількість товару
+      // функція має повертати назву товару і вартість
+      // перевірити на варіантах:
+      // 1) banana 30, 4,5
+      // 2) cherry 58, 1,3
+      // 3) orange 89. 3,4
+
+      //Рішення-3
+
+      // function Shop(itemName, costPerKg, numOfItems) {
+      //   this.itemName = itemName;
+      //   this.costPerKg = costPerKg;
+      //   this.numOfItems = numOfItems;
+      //   return console.log(
+      //     `${itemName}: ` + Math.round(costPerKg / numOfItems)
+      //   );
+      // }
+
+      // let banana = new Shop("banana", 30, 4.5);
+      // let cherry = new Shop("cherry", 58, 1.3);
+      // let orange = new Shop("orange", 89, 3.4);
+    </script>
+  </body>
+</html>
